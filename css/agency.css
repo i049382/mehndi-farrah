@@ -382,7 +382,7 @@ section h3.section-subheading{
 	position:absolute;
 	content:"";
 	width:2px;
-	background-color:silver;
+	background-color:#fed136;
 	left:40px;
 	margin-left:-1.5px
 }
@@ -434,7 +434,7 @@ section h3.section-subheading{
 	background-color:#fed136;
 	color:#fff;
 	border-radius:100%;
-	border:3px solid silver;
+	border:3px solid #fed136;
 	text-align:center
 }
 
