@@ -40,6 +40,11 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
+        thumbnail
+        {
+          max-height:78.750px;
+        }
+
         .img-circle
         {
             border-style: solid;
@@ -62,6 +67,24 @@
               font-weight: normal;
               font-style: normal;
         }
+        #lightbox .modal-content {
+    display: inline-block;
+    text-align: center;
+}
+
+#lightbox .close {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: -15px;
+    right: -55px;
+
+    z-index:1032;
+}
 
     </style>
 </head>
@@ -357,54 +380,71 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-6 portfolio-item" >
-                    <!-- <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal"  style="max-width:250px; max-height:250px" > -->
-                        <!-- <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div> -->
-                        <!-- <img style="max-width:250px; max-height:250px" src="https://scontent-lhr3-1.cdninstagram.com/hphotos-xfa1/t51.2885-15/e35/12407213_211001282579055_1199486444_n.jpg" class="img-responsive" alt=""> -->
-                        <blockquote class="instagram-media" data-instgrm-version="6" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BAf9ASCMpR_/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A photo posted by Farrah (@mehndi_by_farrah)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-01-14T00:25:46+00:00">Jan 13, 2016 at 4:25pm PST</time></p></div></blockquote>
-<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
-                    <!-- </a> -->
-                    <!-- <div class="portfolio-caption" style="max-width:250px;">
-                        <h4>Round Icons</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div> -->
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 portfolio-item">
-                    <!-- <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal" style="max-width:250px; max-height:250px" > -->
-                        <!-- <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div> -->
-                        <blockquote class="instagram-media" data-instgrm-version="6" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BAAT7lbspWg/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A photo posted by Farrah (@mehndi_by_farrah)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-01-01T17:30:24+00:00">Jan 1, 2016 at 9:30am PST</time></p></div></blockquote>
-<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
-                        <!-- <img style="max-width:250px; max-height:250px" src="https://scontent-lhr3-1.cdninstagram.com/hphotos-xap1/t51.2885-15/e35/1516514_488819241320037_945144590_n.jpg" class="img-responsive" alt=""> -->
-                    <!-- </a> -->
-                    <!-- <div class="portfolio-caption" style="max-width:250px;">
-                        <h4>Startup Framework</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div> -->
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 portfolio-item">
-                    <!-- <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal" style="max-width:250px; max-height:250px"> -->
-                        <!-- <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div> -->
-                        <!-- <img style="max-width:250px; max-height:250px" src="https://scontent-lhr3-1.cdninstagram.com/hphotos-xap1/t51.2885-15/e35/12357915_1065678683451030_2025693577_n.jpg" class="img-responsive" alt=""> -->
-                        <blockquote class="instagram-media" data-instgrm-version="6" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/9MFqmMMpba/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A photo posted by Farrah (@mehndi_by_farrah)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-10-23T17:42:27+00:00">Oct 23, 2015 at 10:42am PDT</time></p></div></blockquote>
-<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
-                    <!-- </a> -->
-                    <!-- <div class="portfolio-caption" style="max-width:250px;">
-                        <h4>Treehouse</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div> -->
-                </div>
+              <div class="container">
+                  <div class="col-xs-6 col-sm-4">
+                      <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+                          <img style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_1.jpg" alt="...">
+                      </a>
+                  </div>
+                  <div class="col-xs-6 col-sm-4">
+                      <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+                          <img style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_2.jpg" alt="...">
+                      </a>
+                  </div>
+                  <div class="col-xs-6 col-sm-4">
+                      <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+                          <img style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_3.jpg" alt="...">
+                      </a>
+                  </div>
+
+
+                  <div class="col-xs-6 col-sm-4">
+                      <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+                          <img style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_4.jpg" alt="...">
+                      </a>
+                  </div>
+                  <div class="col-xs-6 col-sm-4">
+                      <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+                          <img  style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_5.jpg" alt="...">
+                      </a>
+                  </div>
+                  <div class="col-xs-6 col-sm-4">
+                      <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+                          <img style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_6.jpg" alt="...">
+                      </a>
+                  </div>
+
+
+                  <div class="col-xs-6 col-sm-4">
+                      <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+                          <img style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_7.jpg" alt="...">
+                      </a>
+                  </div>
+                  <div class="col-xs-6 col-sm-4">
+                      <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+                          <img style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_8.jpg" alt="...">
+                      </a>
+                  </div>
+                  <div class="col-xs-6 col-sm-4">
+                      <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+                          <img style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_9.jpg" alt="...">
+                      </a>
+                  </div>
+
+              </div>
+
+              <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
+                      <div class="modal-content">
+                          <div class="modal-body">
+                              <img src="" alt="" />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
                 <!-- <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -753,7 +793,7 @@ The terms Henna and Mehndi are often used interchangeably.
           <div class="col-lg-12  text-center">
             <h2 class="section-heading">
               <!-- <center><img class="img-responsive" src="img/headers/contact.png" alt="Contact"></center> -->
-              contacts
+              contact
             </h2>
             <h3 class="section-subheading text-muted">Do you have any questions? Want to discuss your specific requirements? Get in contact with us by clicking one of the icons below or send a message...</h3>
           </div>
@@ -1086,6 +1126,33 @@ The terms Henna and Mehndi are often used interchangeably.
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+    <script>
+    $(document).ready(function() {
+        var $lightbox = $('#lightbox');
+
+        $('[data-target="#lightbox"]').on('click', function(event) {
+            var $img = $(this).find('img'),
+                src = $img.attr('src'),
+                alt = $img.attr('alt'),
+                css = {
+                    'maxWidth': $(window).width() - 100,
+                    'maxHeight': $(window).height() - 100
+                };
+
+            $lightbox.find('.close').addClass('hidden');
+            $lightbox.find('img').attr('src', src);
+            $lightbox.find('img').attr('alt', alt);
+            $lightbox.find('img').css(css);
+        });
+
+        $lightbox.on('shown.bs.modal', function (e) {
+            var $img = $lightbox.find('img');
+
+            $lightbox.find('.modal-dialog').css({'width': $img.width()});
+            $lightbox.find('.close').removeClass('hidden');
+        });
+    });
+    </script>
 
 </body>
 
