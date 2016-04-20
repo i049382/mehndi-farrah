@@ -40,11 +40,6 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-        thumbnail
-        {
-          max-height:78.750px;
-        }
-
         .img-circle
         {
             border-style: solid;
@@ -70,6 +65,8 @@
         #lightbox .modal-content {
     display: inline-block;
     text-align: center;
+    top:10vh;
+    height: 75vh;
 }
 
 #lightbox .close {
@@ -80,8 +77,8 @@
     border-radius: 30px;
     border: 2px solid rgb(255, 255, 255);
     position: absolute;
-    top: -15px;
-    right: -55px;
+    top: 10vh;
+    right: -50px;
 
     z-index:1032;
 }
@@ -381,53 +378,52 @@
             </div>
             <div class="row">
               <div class="container">
+
                   <div class="col-xs-6 col-sm-4">
                       <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
-                          <img style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_1.jpg" alt="...">
+                          <img style="max-height:180px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_1.jpg" alt="...">
                       </a>
                   </div>
                   <div class="col-xs-6 col-sm-4">
                       <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
-                          <img style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_2.jpg" alt="...">
+                          <img style="max-height:180px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_2.jpg" alt="...">
                       </a>
                   </div>
                   <div class="col-xs-6 col-sm-4">
                       <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
-                          <img style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_3.jpg" alt="...">
+                          <img style="max-height:180px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_3.jpg" alt="...">
+                      </a>
+                  </div>
+                  <div class="col-xs-6 col-sm-4">
+                      <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+                          <img style="max-height:180px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_4.jpg" alt="...">
+                      </a>
+                  </div>
+                  <div class="col-xs-6 col-sm-4">
+                      <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+                          <img  style="max-height:180px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_5.jpg" alt="...">
+                      </a>
+                  </div>
+                  <div class="col-xs-6 col-sm-4">
+                      <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+                          <img style="max-height:180px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_6.jpg" alt="...">
                       </a>
                   </div>
 
 
                   <div class="col-xs-6 col-sm-4">
                       <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
-                          <img style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_4.jpg" alt="...">
+                          <img style="max-height:180px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_7.jpg" alt="...">
                       </a>
                   </div>
                   <div class="col-xs-6 col-sm-4">
                       <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
-                          <img  style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_5.jpg" alt="...">
+                          <img style="max-height:180px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_8.jpg" alt="...">
                       </a>
                   </div>
                   <div class="col-xs-6 col-sm-4">
                       <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
-                          <img style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_6.jpg" alt="...">
-                      </a>
-                  </div>
-
-
-                  <div class="col-xs-6 col-sm-4">
-                      <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
-                          <img style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_7.jpg" alt="...">
-                      </a>
-                  </div>
-                  <div class="col-xs-6 col-sm-4">
-                      <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
-                          <img style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_8.jpg" alt="...">
-                      </a>
-                  </div>
-                  <div class="col-xs-6 col-sm-4">
-                      <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
-                          <img style="max-height:200px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_9.jpg" alt="...">
+                          <img style="max-height:180px; max-width:270px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_9.jpg" alt="Mehndi heart two hands">
                       </a>
                   </div>
 
@@ -1126,33 +1122,8 @@ The terms Henna and Mehndi are often used interchangeably.
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
-    <script>
-    $(document).ready(function() {
-        var $lightbox = $('#lightbox');
 
-        $('[data-target="#lightbox"]').on('click', function(event) {
-            var $img = $(this).find('img'),
-                src = $img.attr('src'),
-                alt = $img.attr('alt'),
-                css = {
-                    'maxWidth': $(window).width() - 100,
-                    'maxHeight': $(window).height() - 100
-                };
 
-            $lightbox.find('.close').addClass('hidden');
-            $lightbox.find('img').attr('src', src);
-            $lightbox.find('img').attr('alt', alt);
-            $lightbox.find('img').css(css);
-        });
-
-        $lightbox.on('shown.bs.modal', function (e) {
-            var $img = $lightbox.find('img');
-
-            $lightbox.find('.modal-dialog').css({'width': $img.width()});
-            $lightbox.find('.close').removeClass('hidden');
-        });
-    });
-    </script>
 
 </body>
 
