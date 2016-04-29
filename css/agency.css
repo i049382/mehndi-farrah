@@ -1,7 +1,7 @@
 @font-face {
 			font-family: "CawwahBreak";
 
-			src:  url('../fonts/coffeebreak.woff2') format('woff2'),
+			src:  url('https://github.com/i049382/mehndi-farrah/raw/master/fonts/coffeebreak.woff2') format('woff2'),
 						url('../fonts/coffeebreak.ttf') format('truetype'),
 						url('../fonts/coffeebreak.woff') format('woff'),
        			url('../fonts/coffeebreak.svg#CoffeBreak-Script1') format('svg')
