@@ -69,6 +69,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
+
+
         .img-circle
         {
             border-style: solid;
@@ -97,6 +99,27 @@
                     url('/fonts/coffeebreak.woff') format('woff'),
                     url('/fonts/coffeebreak.ttf') format('truetype');
         }
+        .testimonial
+    		{
+    			text-align:center;
+    			margin:10px;
+    			font-size:10pt;
+    		}
+        .img-testimonial{
+          width:100px;
+          height:100px;
+        }
+    		.fa-star{
+    		color:gold;margin-bottom:10px}
+    		.carousel-control.left, .carousel-control.right
+    		{
+    			color:black;
+    			background-image:none;
+
+    		}
+    		.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+
+        top: 15%;}
     </style>
 </head>
 
@@ -104,7 +127,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container" style="margin-left: 0px;">
+        <div class="container" style="margin-left: 0px;margin-right: 50px;width:auto;">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -139,6 +162,9 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#faqs">FAQs</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#testimonials">Testimonials</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -580,11 +606,62 @@
             </div>
         </div>
     </section>
+    <section id="testimonials"     style="margin:25px;padding: 100px 0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12  text-center">
+            <h2 class="section-heading">
+              testimonials
+            </h2>
+              <!-- <h3 class="section-subheading text-muted">Do you have any questions? Want to discuss your specific requirements? Get in contact with us by clicking one of the icons below or send a message...</h3> -->
+          </div>
+        </div> <!-- row -->
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="height:300px;">
+
+
+  <div class="carousel-inner" role="listbox" style="color:black;">
+    <div class="item active">
+  <div class="testimonial">
+  <div class="row">
+
+      <img class="img-circle img-testimonial" src="https://img1.etsystatic.com/115/0/92302221/iusa_75x75.41687389_izbb.jpg" alt="...">
+    </div>
+    <div class="row" style="margin-top:10px;margin-left:20px;margin-right:20px;">
+    <i class="fa fa-fw fa-star" aria-hidden="true"></i>
+    <i class="fa fa-fw fa-star" aria-hidden="true"></i>
+    <i class="fa fa-fw fa-star" aria-hidden="true"></i>
+    <i class="fa fa-fw fa-star" aria-hidden="true"></i>
+    <i class="fa fa-fw fa-star" aria-hidden="true"></i>
+    <br>
+    <!-- <i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp; -->
+    Absolutely beautiful and top quality candle. Would highly recommend! Looking forward to giving this as a mendhi gift to the bride and groom!
+    <!-- &nbsp;<i class="fa fa-quote-right" aria-hidden="true"></i> -->
+    </div>
+    <div class="row" style="margin-top:10px"> Oseila on 12 Jul, 2016 <a href="https://www.etsy.com/uk/shop/mehndibyfarrah#reviews">Etsy</a></div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+</div>
+    </section>
 
 
     <!-- Contact Section -->
     <section id="contact">
       <div class="container">
+
         <div class="row">
           <div class="col-lg-12  text-center">
             <h2 class="section-heading">
