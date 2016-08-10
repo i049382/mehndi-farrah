@@ -22,10 +22,8 @@
   
   1. By default bullet-log.png is used, if possible use a profile image.
   2. By default each review has 5 stars. Remove the necessary lines to give the appropriate number of stars.
-
-   ``` <i class="fa fa-fw fa-star" aria-hidden="true"></i> ```  
-You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).  
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
-
+  3. Enter the review, ensure that you overwrite <<REVIEW>>.
+  4. Enter the customers first name only in <<CLIENT>>
+  5. Enter the month and year in <<MONTH>> <<YEAR>> respectively.
+  6. If there is a link to the review, eg Etsy put it in the <<LINK>> placeholder, eg
+   ```html <a href="https://www.etsy.com/uk/shop/mehndibyfarrah#reviews">Etsy</a>```  
