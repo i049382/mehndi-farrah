@@ -23,7 +23,6 @@
   ```
   
   1. By default bullet-log.png is used, if possible use a profile image.
-  2. By default each review has 5 stars. Remove the necessary lines to give the appropriate number of stars.
-⋅⋅⋅``` <i class="fa fa-fw fa-star" aria-hidden="true"></i> ```
+  2. By default each review has 5 stars. Remove the necessary lines to give the appropriate number of stars.  ``` <i class="fa fa-fw fa-star" aria-hidden="true"></i> ```
   
   3. 
