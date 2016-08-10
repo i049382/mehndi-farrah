@@ -23,6 +23,6 @@
   ```
   
   1. By default bullet-log.png is used, if possible use a profile image.
-  2. ```html  <i class="fa fa-fw fa-star" aria-hidden="true"></i> ```
+  2. ```html <i class="fa fa-fw fa-star" aria-hidden="true"></i> ```
   
   3. 
