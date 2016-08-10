@@ -1,5 +1,5 @@
 # mehndi-farrah
-
+```html
   <div class="item">
     <div class="testimonial">
       <div class="row">
@@ -19,5 +19,6 @@
       <div class="row" style="margin-top:10px"> Meena, October 2015</div>
     </div>
   </div>
+  ```
   
   1. By default bullet-log.png is used, if possible use a profile image.
