@@ -14,6 +14,8 @@
 4. Change the name of the photo and the thumbnail.
 5. Update the alt field, this is used to describe the photo.
 
+
+
 ## Review Template
 ```html
   <div class="item">
