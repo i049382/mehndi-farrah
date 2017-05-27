@@ -1,4 +1,19 @@
 # Mehndi by Farrah
+
+## Portfolio Photos
+```html
+  <div class="col-xs-6 col-sm-3">
+    <a href="#portfolioModal" class="thumbnail" data-toggle="modal" data-target="#portfolioModal" data-img-url="img/portfolio/mehndi_1.jpg">
+      <img style="max-height:180px;height:180px; width:100%; object-fit:cover;" src="img/portfolio/mehndi_1_th.jpg" alt="Mehndi heart two hands">
+    </a>
+  </div>
+```
+1. Upload your new photo to the /img/portfolio folder. Ensure that you have the original photo and a thumbnail.
+2. Copy the above html code for your new photos.
+3. Paste the code in the portfolio section.
+4. Change the name of the photo and the thumbnail.
+5. Update the alt field, this is used to describe the photo.
+
 ## Review Template
 ```html
   <div class="item">
