@@ -10,7 +10,7 @@
 ```
 1. Upload your new photo to the /img/portfolio folder. Ensure that you have the original photo and a thumbnail.
 2. Copy the above html code for your new photos.
-3. Paste the code in the portfolio section.
+3. Paste the code in the portfolio section in the index.html file.
 4. Change the name of the photo and the thumbnail.
 5. Update the alt field, this is used to describe the photo.
 
