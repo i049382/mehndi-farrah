@@ -23,21 +23,10 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
 <style>
-	html, body { max-height:100%;height:100%;}
+	html, body {
+		max-height:100%;height:100%;
+	}
 	
-		
-		.demo-card-image.mdl-card {
-  width: 100%;
-  height:calc((100vh - 70px)/4);
-  background: url('https://unsplash.it/200/300?image=5') center / cover;
-}
-
-.demo-card-image__filename {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-	
-}
 	.mdl-mini-footer{
 		position: fixed !important;
 		left:0;
@@ -51,22 +40,9 @@
 		width:100vw;
 		height: calc((100vh - 24px)/4);
 		min-height: calc((100vh - 24px)/4);
-	}
-	
-	.mdl-card__media img{
-		object-fit: cover;
-		width:calc(100vw - 20px);
-		
-/* 		height: auto; */
-   left: 0;
-   margin: 0;
-/*    min-height: 100%; */
-/*    min-width: 674px; */
-   padding: 0;
-   position: fixed;
-   top: 0;
-/*    width: 100%; */
-   z-index: -1;
+		border-bottom-style: solid;
+		border-width: .01em;
+		border-color: white;
 	}
 	
 	.mdl-card__actions {
@@ -79,7 +55,12 @@
 		height: 100%;
 		padding: 16px;
 		background: rgba(0, 0, 0, 0.2);
-		color:white
+	}
+	
+	.mdl-card__title-text {
+		color:white;
+		font-size: 2em;
+		font-weight: bolder;
 	}
 	
 	</style>
